@@ -43,7 +43,7 @@ public class LoginCommands implements CommandExecutor {
 				DecsLoginSecurity2Main.getInstance().saveYml();
 				p.sendMessage("§dLogged in with password §6§k" + args[0]);
 			}
-		} else if (cmd.getName().equalsIgnoreCase("resetpassword")) {
+		} else if (cmd.getName().equalsIgnoreCase("resetpassword") && p.isOp()) {
 			String s = Bukkit.getOfflinePlayer(args[0]).getUniqueId().toString();
 			if(s == null) {
 				p.sendMessage("§d" + args[0] + " §cis not a known player");
