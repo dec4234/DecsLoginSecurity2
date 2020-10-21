@@ -18,6 +18,7 @@ public final class DecsLoginSecurity2Main extends JavaPlugin {
 	private static DecsLoginSecurity2Main instance;
 	public File ymlFile = new File(getDataFolder() + "/playerLoginInfo.yml");
 	public FileConfiguration ymlConfig = (FileConfiguration) YamlConfiguration.loadConfiguration(this.ymlFile);
+	public FileConfiguration config = getConfig();
 
 	@Override
 	public void onEnable() {

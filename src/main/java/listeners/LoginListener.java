@@ -57,7 +57,7 @@ public class LoginListener implements Listener {
 					Notifiers.sendActionBarMessage(p, "§6§lPlease register a password §d/register <password>");
 				}
 				if (System.currentTimeMillis() - time > 60 * 1000 && !LoginSecurity.isUserLoggedIn(p.getUniqueId())) {
-					p.kickPlayer("");
+					p.kickPlayer("§7[§dDecsLoginSecurity§7]\n§6Timed out\n§aIf you need your password reset join our discord\n§9https://discord.gg/dyTzxeW");
 					this.cancel();
 				}
 			}
